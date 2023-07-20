@@ -4,7 +4,10 @@ export const HeaderContainer = styled.header`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: ${props => props.theme['base-background']};
 
+    top: 0;
+    position: sticky;
     padding: 2rem 10rem;
 
     nav{
@@ -20,10 +23,10 @@ const BaseNavItems = styled.button`
     justify-content: center;
     line-height: 130%;
     border: 0;
+    cursor: pointer;
 `;
 
 export const Location = styled(BaseNavItems)`
-    
     gap: 0.25rem;
     background-color: ${props => props.theme['purple-light']};
     color: ${props => props.theme['purple-dark']}
